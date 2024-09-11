@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Image Resizer</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Image Resizer</h1>
+
+        <!-- Image Upload Section -->
+        <input type="file" id="imageInput" accept="image/*">
+        <br>
+
+        <!-- Image Preview -->
+        <div class="image-preview" id="imagePreview">
+            <img id="previewImg" src="#" alt="Preview Image" style="display: none;">
+        </div>
+
+        <!-- Resizing Controls -->
+        <div class="resize-controls">
+            <label for="width">Width:</label>
+            <input type="number" id="width" placeholder="Width">
+
+            <label for="height">Height:</label>
+            <input type="number" id="height" placeholder="Height">
+
+            <button id="resizeBtn">Resize Image</button>
+        </div>
+
+        <!-- Download Button -->
+        <a id="downloadBtn" style="display: none;">Download Resized Image</a>
+    </div>
+
+    <script src="demo.js"></script>
+</body>
+</html>
